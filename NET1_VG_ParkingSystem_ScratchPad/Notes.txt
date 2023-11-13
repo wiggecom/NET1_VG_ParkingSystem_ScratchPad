@@ -1,0 +1,68 @@
+﻿Krav
+
+- (Not for me to judge, but would be better with one more day to polish)
+    ◦ Uppgiften ska göras på ett genomtänkt sätt som påvisar djupare förståelse för kodens
+      uppbyggnad.
+    ◦ Koden ska uppvisa god ordning, bra struktur och vara uppdelad på ett relevant sätt.
+
+- (ok, some variables are more explanational than pure, all should be correct camelcase though)
+    ◦ Variabler, properties, klasser och metoder ska vara korrekt angivna, med korrekt camel-
+      case och substantiv för klasser och verb för metoder.
+
+- (Sorry, we were too busy with the group assignment to keep new information in mind the last couple
+   of weeks, it's lacking here and i'd need a few more days to do more)
+     ◦ Koden ska visa god förståelse för objektorienterade principer, med tanke på inkapsling,
+       arv, abstraktion och polymorfism.
+
+- (no time to refactor and optimize, but probably a few parts that could be moved to new methods)
+    ◦ Koden ska vara “DRY”
+
+
+Regler
+
+- (can do, no problem, but need a few more hours) 
+    Beroende på vilken typ av fordon ska användaren mata in uppgifterna (Regnr kan automatgenereras)
+    
+- (ish. Specific details are only presented at the moment of driving in, though easy to implement
+   for now it's presented as registration#, color and pure subclass)
+    ◦ En lista med alla fordon ritas ut, som kan se ut såhär:
+      Plats 1 Bil ABC123 Röd Elbil
+    
+- (ish, 1buck/sec, about as greedy as Facebook)
+    ◦ Priset för parkeringen visas, som är baserat på priset 1.5 kr per minut.
+
+
+Done:
+    ◦ DU ska bygga ett adminstrationssystem för ett parkeringshus
+    ◦ I parkeringshuset kan tre typer av fordon parkera
+    ◦ Bil Tar en parkeringsplats
+    ◦ Buss Tar två parkeringsplatser
+    ◦ Motorcykel Tar en halv parkeringsplats
+    ◦ Det ska inte gå att parkera ett Fordon/Vehicle
+    ◦ De properties som varje fordon har är:
+    x Registreringsnummer
+    x Färg på fordonet
+    ◦ Unika egenskaper är:
+    x Bil: Elbil (bool)
+    x Motorcykel: Märke (string)
+    x Buss: Antal passagerare (int)
+
+-(Resizable by setting variable in main, can handle 2-18 slots without graphical issues, 
+  unless there are an unusually high number of motorcycles, no time to cut list presentation)
+    x+ Antal parkeringsplatser: 15
+
+Done:
+    ◦ För betyget VG ska applikationen uppvisa en smart hantering av fordonen och
+    parkeringshuset.
+    ◦ Gränssnittet ska vara enkelt att använda, och ha kontroll för felaktig inmatning.
+    ◦ Uppgiften ska göras individuellt.
+
+Done:
+    ◦ Ett slumpmässigt fordon anländer till parkeringshuset
+    ◦ Därefter ska en algoritm placera fodonet på lämplig plats
+    ◦ Det ska gå att checka ut valfritt fordon genom att ange registreringsnummer
+    ◦ Fordonet försvinner från parkeringshuset
+    ◦ Målet är att se till att parkeringsplatserna är optimalt utnyttjade
+    ◦ Se till att bilarna inte står med luckor så inte en buss får plats
+    ◦ Se till att motorcyklarna delar plats så de inte tar upp en hel parkeringsruta
+
